@@ -261,7 +261,7 @@ fi
 if [ -e ${FILENAME} ]; then
 
         echo "backupios (mksysb) completed at `date`"
-		logger -puser.warn -tviosbackup "Backup to nfs server completed successfully."
+		logger -puser.info -tviosbackup "Backup to nfs server completed successfully."
 else
         echo "WARNING: Backup file not found on NFS share."
 		logger -puser.err -tviosbackup "Backup to nfs server failed. File not found. See the backup section of server documentation in Confluence and raise a ticket."
